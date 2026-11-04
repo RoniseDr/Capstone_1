@@ -22,7 +22,7 @@ The objective is to analyze sales data for EmporiUm, a fictional bookstore busin
 
 
 
-**Assigned Sales Territory: Colorado - West Region.
+### Assigned Sales Territory: Colorado - West Region.
 
 
 
