@@ -4,6 +4,7 @@
 -- Sales Channel: In-Store 
 
 
+
 -- QUESTION 1: Total Revenue and Date Range 
 
 SELECT SUM(Sale_Amount) AS Total_Revenue, 
@@ -12,6 +13,7 @@ SELECT SUM(Sale_Amount) AS Total_Revenue,
 FROM store_sales JOIN store_locations
        ON Store_ID = StoreId
 WHERE State = 'Colorado';
+
 
 
 -- Question 2: Revenue by Year and Month
@@ -23,6 +25,62 @@ FROM store_sales JOIN store_locations
 WHERE State = 'Colorado'
 GROUP BY Sales_Year, Sales_Month
 ORDER BY Sales_Year, Sales_Month;
+
+
+
+-- QUESTION 3: Comparison for Territory vs. Region Revenue
+-- NOTE: Colorado is the only physical-store state in the West Region and accounts for 100% of sales. The other input that came up was Online Sales. 
+-- Colorado's in-store revenue equals the West Region's total in-store revenue. 
+-- Online sales are excluded in my query.
+
+-- Colorado Revenue 
+SELECT SUM(SS.Sale_Amount) AS Colorado_Revenue 
+FROM store_sales AS SS 
+JOIN store_locations AS SL 
+    ON SS.Store_ID = SL.StoreId 
+WHERE SL.State = 'Colorado'; 
+
+
+-- West Region Revenue 
+SELECT SUM(SS.Sale_Amount) AS West_Region_Revenue 
+FROM store_sales AS SS 
+JOIN store_locations AS SL 
+    ON SS.Store_ID = SL.StoreId 
+WHERE SL.State IN ( 
+    SELECT State 
+    FROM sample_sales.management 
+    WHERE Region = 'West');
+
+
+
+
+
+
+-- Question 4: Monthly Transactions and Average Transaction Amount by Product Category for sales territory.
+
+DESCRIBE products;
+DESCRIBE inventory_categories;
+DESCRIBE store_locations;
+DESCRIBE store_sales;
+
+SELECT YEAR(Transaction_Date) AS Transaction_Year,
+       Month(Transaction_Date) AS Transaction_Month,
+       IC.category AS Product_category,
+       AVG(Sale_Amount) AS Avg_Transaction,
+       COUNT(*) AS Num_Transactions
+FROM products AS P JOIN store_sales AS SS
+        ON SS.Prod_Num = P.ProdNum 
+     JOIN store_locations AS SL
+        ON SS.Store_ID = SL.StoreId
+     JOIN inventory_categories AS IC
+        ON P.Categoryid = IC.Categoryid
+WHERE SL.State = 'Colorado'
+GROUP BY Transaction_Year, Transaction_Month, Product_category;  
+
+
+
+
+
 
 
 
