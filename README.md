@@ -58,7 +58,7 @@ The objective is to analyze sales data for EmporiUm, a fictional bookstore busin
 
 - Confirmed 125,565 online sales records.
 
-- Began exploring table structures and relationships through an entity relationship diagram
+- Began exploring table structures and relationships through an entity relationship diagram(ERD)
 
 
 
