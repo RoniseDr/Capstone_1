@@ -6,11 +6,11 @@ Date: 11/2/2026
 
 
 
-\# Capstone 1 — EmporiUm Sales Analysis
+# Capstone 1 — EmporiUm Sales Analysis
 
 
 
-\## Project Overview
+## Project Overview
 
 
 
@@ -22,61 +22,61 @@ The objective is to analyze sales data for EmporiUm, a fictional bookstore busin
 
 
 
-\*\*Assigned Sales Territory: Colorado - West Region.
+### Assigned Sales Territory: Colorado - West Region.
 
 
 
-\## Tools
+## Tools
 
 
 
-\- MySQL Server 8.4.13
+- MySQL Server 8.4.13
 
-\- MySQL Workbench 26.10.0
+- MySQL Workbench 26.10.0
 
-\- Microsoft Excel
+- Microsoft Excel
 
-\- Git and GitHub
-
-
-
-\## Progress — November 2, 2026
+- Git and GitHub
 
 
 
-\- Downloaded MYSQL Workbench and Server
-
-\- Created and cloned the Capstone\_1 GitHub repository through GitBash.
-
-\- Installed and configured MySQL Server.
-
-\- Imported the sample\_sales database.
-
-\- Verified all eight database tables.
-
-\- Confirmed 335,129 store sales records.
-
-\- Confirmed 125,565 online sales records.
-
-\- Began exploring table structures and relationships through an entity relationship diagram
+## Progress — November 2, 2026
 
 
 
-\## Planned Deliverables
+- Downloaded MYSQL Workbench and Server
+
+- Created and cloned the Capstone\_1 GitHub repository through GitBash.
+
+- Installed and configured MySQL Server.
+
+- Imported the sample\_sales database.
+
+- Verified all eight database tables.
+
+- Confirmed 335,129 store sales records.
+
+- Confirmed 125,565 online sales records.
+
+- Began exploring table structures and relationships through an entity relationship diagram(ERD)
 
 
 
-\- SQL sales territory analysis
-
-\- Excel PivotChart
-
-\- Recorded project walkthrough
-
-\- Sales analysis presentation
+## Planned Deliverables
 
 
 
-\## Video Walkthrough
+- SQL sales territory analysis
+
+- Excel PivotChart
+
+- Recorded project walkthrough
+
+- Sales analysis presentation
+
+
+
+## Video Walkthrough
 
 
 
