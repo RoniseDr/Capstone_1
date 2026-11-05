@@ -82,9 +82,13 @@ Question 5: Store revenue ranking PivotTable and PivotChart.
 # Project Files 
 
 Drakes_sales_analysis.sql - Six required SQL questions and recommendation. 
+
 Drakes_investigation_notes.sql - Additional investigation and summary queries. *
+
 Drakes_territory_chart.xlsx - Excel analysis and charts. 
+
 Drakes_Capstone1_Colorado_Sales_Analysis_Submission.pptx - Ten-slide presentation with speaker notes. 
+
 README.md - Project overview and findings. 
 
 Video Walkthrough 
