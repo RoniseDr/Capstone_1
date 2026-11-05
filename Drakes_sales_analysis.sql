@@ -17,6 +17,7 @@ WHERE State = 'Colorado';
 
 
 -- Question 2: Revenue by Year and Month
+
 SELECT YEAR(Transaction_Date) AS Sales_Year, 
        MONTH(Transaction_Date) AS Sales_Month,
        SUM(Sale_Amount) AS Total_Revenue
@@ -80,8 +81,44 @@ GROUP BY Transaction_Year, Transaction_Month, Product_category;
 
 
 
+-- QUESTION 5: Store Performance Rankings for in-store sales.
+
+SELECT
+      SL.StoreLocation,
+      SL.StoreId,
+      SUM(SS.Sale_Amount) AS Sales_Performance
+FROM store_sales AS SS 
+JOIN store_locations AS SL
+       ON SS.Store_ID = SL.StoreId
+WHERE SL.State = 'Colorado'
+GROUP BY SL.StoreId, SL.StoreLocation
+ORDER BY Sales_Performance DESC;
+ 
+
+-- Reccomendation for where to focus our sales attention in the next quarter.
+
+-- Based on my analysis of Q4 2025, Denver and Greeley were the highest performing Colorado store locations.
+-- Denver generated $111,875.48 in sales revenue, approximately 63% more than Greeley, the second-highest performing location, which generated $68,447.67. 
+-- My reccomendation is to focus next quarter's sales attention on Denver first and Greeley second based on their sales performace in Q4 2025. 
 
 
+-- Colorado Store Performance in Q4 2025. 
 
-
-      
+SELECT 
+    YEAR(SS.Transaction_Date) AS Transaction_Year, 
+    QUARTER(SS.Transaction_Date) AS Transaction_Quarter, 
+    SL.StoreLocation, 
+    SL.StoreId, 
+    SUM(SS.Sale_Amount) AS Sales_Performance 
+FROM store_sales AS SS 
+JOIN store_locations AS SL 
+    ON SS.Store_ID = SL.StoreId 
+WHERE SL.State = 'Colorado' 
+    AND YEAR(SS.Transaction_Date) = 2025 
+    AND QUARTER(SS.Transaction_Date) = 4 
+GROUP BY Transaction_Year, 
+         Transaction_Quarter, 
+         SL.StoreId, 
+         SL.StoreLocation 
+ORDER BY Sales_Performance DESC; 
+    
