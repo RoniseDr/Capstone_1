@@ -1,474 +1,92 @@
-# \# Capstone 1 - EmporiUm Sales Analysis 
+# Capstone 1 - EmporiUm Sales Analysis 
 
-# 
+Year Up United - Data Analytics Training Academy 
 
-# &#x20; 
+Week 4 Capstone: SQL, Excel, and Data Storytelling 
 
-# 
+Analyst: Ronise Drakes 
 
-# Year Up United - Data Analytics Training Academy   
+Date: November 5, 2026 
 
-# 
+Assigned Territory: Colorado (West Region) 
 
-# Week 4 Capstone: SQL, Excel, and Data Storytelling 
+Reporting Period: January 1, 2022 - December 31, 2025 
 
-# 
+# Project Overview 
 
-# &#x20; 
+This project analyzes sales data for EmporiUm, a fictional bookstore business. I used SQL to answer six business questions and Excel to visualize the results. The analysis focuses on in-store sales at 18 Colorado locations. Online sales are excluded. 
 
-# 
+# Tools 
 
-# Analyst: Ronise Drakes   
+MySQL Server 8.4.13 
 
-# 
+MySQL Workbench 26.10.0 
 
-# Project Started: November 2, 2026   
+Microsoft Excel 
 
-# 
+Microsoft PowerPoint 
 
-# Last Updated: November 5, 2026   
+Git Bash and GitHub 
 
-# 
+# Setup and Data Exploration 
 
-# Assigned Territory: Colorado - West Region   
+Created and cloned the Capstone_1 GitHub repository. 
 
-# 
+Installed and configured MySQL Server and Workbench. 
 
-# Reporting Period: January 1, 2022 - December 31, 2025 
+Imported the sample_sales database and verified eight tables. 
 
-# 
+Confirmed 335,129 store-sales records and 125,565 online-sales records in the database. 
 
-# &#x20; 
+Explored table relationships using an entity relationship diagram (ERD). 
 
-# 
+# Completed SQL Analysis 
 
-# \## Project Overview 
+Calculated total Colorado in-store revenue and the reporting dates. 
 
-# 
+Calculated monthly Colorado revenue for 2022 through 2025. 
 
-# &#x20; 
+Compared Colorado revenue with West Region in-store revenue. 
 
-# 
+Analyzed sales-record counts and average sale amounts by product category and month. 
 
-# This project analyzes sales data for EmporiUm, a fictional bookstore business, using SQL and Microsoft Excel. 
+Ranked all 18 Colorado stores by total revenue. 
 
-# 
+Recommended stores to prioritize using Q4 2025 performance. 
 
-# &#x20; 
+# Key Findings 
 
-# 
+Total Colorado in-store revenue: $6,412,632.22. 
 
-# The goal is to evaluate Colorado's in-store sales performance, identify trends, compare product categories and store locations, and provide a data-supported business recommendation. 
+Colorado is the only physical-store state in the West Region in this dataset, so its in-store revenue equals the regional in-store total. 
 
-# 
+Highest revenue month: October 2025 ($330,762.82). 
 
-# &#x20; 
+Lowest revenue month: November 2022 ($76,920.06). 
 
-# 
+Revenue increased 68.66% from September to October 2025. 
 
-# The analysis covers 18 Colorado physical stores. Online sales are excluded. 
+Technology & Accessories had the highest average sale amount ($464.42) and the most sales records (9,806). 
 
-# 
+The top three stores for 2022-2025 were Denver ($917,471.53), Greeley ($640,368.11), and Englewood ($344,647.48). 
 
-# &#x20; 
+In Q4 2025, Denver generated $111,875.48 and Greeley generated $68,447.67. 
 
-# 
+** Recommendation: Prioritize Denver first and Greeley second for next-quarter sales attention. Additional information on costs, profitability, and customer demand would help strengthen this recommendation. 
 
-# \## Tools 
+# Excel Visualizations 
+Question 2: Monthly revenue line chart. 
+Question 4: Product-category average sale amount bar chart. A summary query was used for the chart because the original monthly query returned many rows. 
+Question 5: Store revenue ranking PivotTable and PivotChart. 
 
-# 
+# Project Files 
 
-# &#x20; 
+Drakes_sales_analysis.sql - Six required SQL questions and recommendation. 
+Drakes_investigation_notes.sql - Additional investigation and summary queries. *
+Drakes_territory_chart.xlsx - Excel analysis and charts. 
+Drakes_Capstone1_Colorado_Sales_Analysis_Submission.pptx - Ten-slide presentation with speaker notes. 
+README.md - Project overview and findings. 
 
-# 
+Video Walkthrough 
 
-# \- MySQL Server 8.4.13 
-
-# 
-
-# \- MySQL Workbench 26.10.0 
-
-# 
-
-# \- Microsoft Excel 
-
-# 
-
-# \- Microsoft PowerPoint 
-
-# 
-
-# \- Git Bash 
-
-# 
-
-# \- Git and GitHub 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \## Database Setup 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \- Installed and configured MySQL Server and Workbench. 
-
-# 
-
-# \- Created and cloned the Capstone\_1 GitHub repository. 
-
-# 
-
-# \- Imported the sample\_sales database. 
-
-# 
-
-# \- Verified all eight database tables. 
-
-# 
-
-# \- Confirmed 335,129 store sales records. 
-
-# 
-
-# \- Confirmed 125,565 online sales records. 
-
-# 
-
-# \- Explored table structures and relationships. 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \## SQL Analysis 
-
-# 
-
-# &#x20; 
-
-# 
-
-# Completed all six required business questions: 
-
-# 
-
-# &#x20; 
-
-# 
-
-# 1\. Calculate Colorado's total in-store revenue and reporting period. 
-
-# 
-
-# 2\. Calculate monthly revenue by year and month. 
-
-# 
-
-# 3\. Compare Colorado revenue with West Region revenue. 
-
-# 
-
-# 4\. Analyze sales-record counts and average sale amounts by product category and month. 
-
-# 
-
-# 5\. Rank Colorado stores by total revenue. 
-
-# 
-
-# 6\. Recommend which stores should receive attention next quarter. 
-
-# 
-
-# &#x20; 
-
-# 
-
-# SQL file: Drakes\_sales\_analysis.sql 
-
-# 
-
-# &#x20; 
-
-# 
-
-# Additional investigation queries are saved in Drakes\_investigation\_notes.sql. 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \## Key Findings 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \### Overall Revenue 
-
-# 
-
-# &#x20; 
-
-# 
-
-# Colorado generated $6,412,632.22 in in-store revenue from January 2022 through December 2025. 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \### Regional Comparison 
-
-# 
-
-# &#x20; 
-
-# 
-
-# Colorado accounts for 100% of the West Region's in-store sales revenue in this dataset. 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \### Monthly Revenue 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \- Highest month: October 2025 - $330,762.82 
-
-# 
-
-# \- Lowest month: November 2022 - $76,920.06 
-
-# 
-
-# \- September to October 2025 revenue increase: 68.66% 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \### Product Categories 
-
-# 
-
-# &#x20; 
-
-# 
-
-# Technology \& Accessories had the highest average sale amount at $464.42 and the highest sales-record count at 9,806. 
-
-# 
-
-# &#x20; 
-
-# 
-
-# Stationery and Supplies was a close second in sales-record count at 9,776, with an average sale amount of $10.07. 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \### Store Rankings 
-
-# 
-
-# &#x20; 
-
-# 
-
-# The three highest-performing stores from 2022 through 2025 were: 
-
-# 
-
-# &#x20; 
-
-# 
-
-# 1\. Denver - $917,471.53 
-
-# 
-
-# 2\. Greeley - $640,368.11 
-
-# 
-
-# 3\. Englewood - $344,647.48 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \### Q4 2025 Results 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \- Denver: $111,875.48 
-
-# 
-
-# \- Greeley: $68,447.67 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \## Business Recommendation 
-
-# 
-
-# &#x20; 
-
-# 
-
-# Prioritize Denver first and Greeley second for next-quarter sales attention. 
-
-# 
-
-# &#x20; 
-
-# 
-
-# These stores demonstrated strong revenue performance across the reporting period and in Q4 2025. 
-
-# 
-
-# &#x20; 
-
-# 
-
-# Additional analysis of profitability, customer demand, and promotional opportunities would help strengthen this recommendation. 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \## Excel Analysis 
-
-# 
-
-# &#x20; 
-
-# 
-
-# The Excel workbook includes: 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \- Question 2: Monthly revenue line chart. 
-
-# 
-
-# \- Question 4: Product category average sale amount bar chart. 
-
-# 
-
-# \- Question 5: Store performance PivotTable and PivotChart. 
-
-# 
-
-# &#x20; 
-
-# 
-
-# Excel workbook: Drakes\_territory\_chart.xlsx 
-
-# 
-
-# &#x20; 
-
-# 
-
-# Supporting CSV: Drakes\_store\_performance.csv 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \## PowerPoint Presentation 
-
-# 
-
-# &#x20; 
-
-# 
-
-# The ten-slide presentation summarizes the SQL analysis, Excel visualizations, key findings, and business recommendation. 
-
-# 
-
-# &#x20; 
-
-# 
-
-# Presentation file: Drakes\_Capstone1\_Colorado\_Sales\_Analysis.pptx 
-
-# 
-
-# &#x20; 
-
-# 
-
-# \## Video Walkthrough 
-
-# 
-
-# &#x20; 
-
-# 
-
-# A ten-minute recorded walkthrough will demonstrate the SQL queries, Excel charts, and business recommendation. 
-
-# 
-
-# &#x20; 
-
-# 
-
-# Recording link: To be added after recording. 
-
+Ten-minute recorded walkthrough: Link to be added after recording. 
