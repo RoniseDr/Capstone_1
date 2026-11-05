@@ -76,7 +76,9 @@ In Q4 2025, Denver generated $111,875.48 and Greeley generated $68,447.67.
 
 # Excel Visualizations 
 Question 2: Monthly revenue line chart. 
+
 Question 4: Product-category average sale amount bar chart. A summary query was used for the chart because the original monthly query returned many rows. 
+
 Question 5: Store revenue ranking PivotTable and PivotChart. 
 
 # Project Files 
