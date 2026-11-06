@@ -95,4 +95,4 @@ README.md - Project overview and findings.
 
 Video Walkthrough 
 
-Ten-minute recorded walkthrough: [Colorado Video Walkthrough ](https://youtu.be/RYXtiHzSeDQ)
+Ten-minute recorded walkthrough: [Capstone 1: Colorado Video Walkthrough ](https://youtu.be/RYXtiHzSeDQ)
