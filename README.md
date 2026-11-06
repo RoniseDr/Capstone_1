@@ -72,7 +72,7 @@ The top three stores for 2022-2025 were Denver ($917,471.53), Greeley ($640,368.
 
 In Q4 2025, Denver generated $111,875.48 and Greeley generated $68,447.67. 
 
-** Recommendation: Prioritize Denver first and Greeley second for next-quarter sales attention. Additional information on costs, profitability, and customer demand would help strengthen this recommendation. 
+Recommendation: Prioritize Denver first and Greeley second for next-quarter sales attention. Additional information on costs, profitability, and customer demand would help strengthen this recommendation. 
 
 # Excel Visualizations 
 Question 2: Monthly revenue line chart. 
@@ -85,11 +85,10 @@ Question 5: Store revenue ranking PivotTable and PivotChart.
 
 Drakes_sales_analysis.sql - Six required SQL questions and recommendation. 
 
-Drakes_investigation_notes.sql - Additional investigation and summary queries. *
 
 Drakes_territory_chart.xlsx - Excel analysis and charts. 
 
-Drakes_Capstone1_Colorado_Sales_Analysis_Submission.pptx - Ten-slide presentation with speaker notes. 
+Drakes_Capstone1_Colorado_Sales_Analysis_Submission.pptx 
 
 README.md - Project overview and findings. 
 
